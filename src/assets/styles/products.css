@@ -1,0 +1,118 @@
+.product-header {
+    display: flex;
+    width: 100vw;
+    height: 224px;
+}
+
+.product-header-left {
+    width: 55vw;
+    background-image: url('../images/product-header.webp');
+    background-position: center;
+    background-size: cover;
+}
+
+.product-header-image {
+    width: 100%;
+}
+
+.product-header-right {
+    color: white;
+    background-color: rgb(33,33,33);
+    text-align: center;
+    padding-top: 40px;
+    width: 45vw;
+    position: relative;  
+}
+
+.product-header-right-inner {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+
+.product-header-right-title {
+    font-family: Arial;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.product-header-right-desc {
+    font-family: Arial;
+    font-size: 11px;
+    width: 80%;
+    margin: auto;
+}
+
+.products-grid {
+    display: grid;
+    width: calc(100vw - 160px);
+    grid-template-columns: repeat(4, calc((100vw - 160px) / 4 - 2px) );
+    justify-content: space-between;
+    margin: auto;
+}
+
+.products-product-image {
+    width: 100%;
+    padding-top: 50px;
+}
+
+.products-product-title {
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 13px;
+    padding-top: 6px;
+}
+
+.products-product-price {
+    font-family: Arial;
+    font-size: 12px;
+    padding-top: 8px;
+}
+
+@media only screen and (max-width: 959px) {
+    .products-grid {
+        display: grid;
+        width: calc(100vw - 40px);
+        grid-template-columns: repeat(2, calc((100vw - 40px) / 2 - 2px) );
+        justify-content: space-between;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .product-header {
+        display: block;
+        height: auto;
+    }
+
+    .product-header-left {
+        width: 100vw;
+        height: 26vw;
+        background-image: url('../images/product-header.webp');
+        background-position: center;
+        background-size: cover;
+    }
+
+    .product-header-right {
+        padding-top: 0px;
+        width: 100vw;
+    }
+
+    .product-header-right-inner {
+        position: static;
+        transform: none;
+        width: 100vw;
+    }
+
+    .product-header-right-title {
+        font-size: 16px;
+        padding: 12px 0px;
+    }
+
+    .product-header-right-desc {
+        display: none;
+    }
+}

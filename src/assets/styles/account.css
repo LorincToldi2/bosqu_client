@@ -1,0 +1,162 @@
+@font-face {
+    font-family: GillSansLight;
+    src: url(../fonts/GillSansStdLight.woff) format("woff");
+    font-style: normal;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+@font-face {
+    font-family: GillSans;
+    src: url(../fonts/GillSansStd.woff) format("woff");
+    font-style: normal;
+    font-weight: 700;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+@font-face {
+    font-family: FontIcon;
+    src: url('../fonts/font-icons.woff');
+}
+
+.sign-n-register {
+    background-color: rgb(245,245,245);
+    width: 100vw;
+}
+
+.snr-header {
+    font-family: Arial;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: auto;
+    width: fit-content;
+    padding-top: 34px;
+    padding-bottom: 50px;
+}
+
+.snr-inner {
+    max-width: 806px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 50% calc(50% + 70px);
+    padding-bottom: 100px;
+}
+
+.snr-left {
+    border-right: 1px solid rgb(220,220,220);
+}
+
+.snr-right {
+    padding-left: 70px;
+}
+
+.snr-title {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Arial;
+    padding-bottom: 60px;
+}
+
+.snr-small {
+    font-size: 13px;
+    font-weight: normal;
+    font-family: Arial;
+    letter-spacing: .2px;
+    padding: 6px;
+}
+
+.snr-input {
+    background-color: rgb(255, 255, 255);
+    font-size: 13px;
+    font-weight: normal;
+    font-family: Arial;
+    letter-spacing: .2px;
+    font-style: italic;
+    padding-left: 15px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 75%;
+    border: none;
+    letter-spacing: 0.1px;
+    margin-left: 8px;
+    margin-bottom: 14px;
+}
+
+.snr-input::placeholder {
+    color: rgb(146,146,146);
+}
+
+.sign-button {
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Arial;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    width: calc(75% + 15px);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 8px;
+    text-align: center;
+}
+
+.create-button {
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Arial;
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+    width: calc(75% + 15px);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 8px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 930px) {
+    .snr-inner {
+        display: block;
+        max-width: none;
+        width: calc(100vw - 40px);
+        padding-bottom: 50px;
+    }
+
+    .snr-title {
+        text-align: center;
+    }
+
+    .snr-left {
+        width: calc(100vw - 40px);
+        margin: auto;
+        border: none;
+        border-bottom: 1px solid rgb(220,220,220);
+        padding-bottom: 40px;
+    }
+
+    .snr-right {
+        padding-left: 0;
+        padding-top: 40px;
+    }
+
+    .snr-input {
+        width: calc(100vw - 55px);
+        margin: 0;
+    }
+
+    .sign-button {
+        margin: auto;
+        width: calc(100vw - 55px);
+    }
+
+    .create-button {
+        margin-top: 70px;
+        width: calc(100vw - 55px);
+    }
+}
